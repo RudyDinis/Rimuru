@@ -1,0 +1,395 @@
+:root {
+    --text-color: #606060;
+    --primary-color: #161616;
+    --light-grey: #fafafa;
+    --primary\<deleted\|variable-3b0502e6\>: #4d6bfa;
+    --misty-rose: #ffdede;
+    --light-blue-bg: #f8f8fa;
+    --link-bg-grey: #f1f1f1;
+    --white: white;
+    --button-radius: 24px;
+    --gradient-primary: #6557ff;
+    --nav-link-color: #979797;
+    --bg-grey: #d4d4d4;
+    --notification-bg: #001b38;
+    --gradient-secondary: #aa3fff;
+    --gradient-third: #f8522e;
+    --gradient-4: #fcaa4a;
+}
+
+body {
+    font-family: Inter, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link {
+    z-index: 1;
+    height: 100%;
+    color: #706f6f;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 17px;
+    font-weight: 400;
+    display: flex;
+    position: relative;
+}
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.dropdown-item:hover {
+    background-color: rgb(92, 92, 92, 0.2);
+    transition: 0.4s;
+}
+
+.home .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .container .banner {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 8px 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 120px;
+    width: 80vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.home .container .banner .banner-image {
+    width: 100%;
+    height: auto + 5px;
+}
+
+.home .container .banner img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.home .container .banner .text {
+    max-width: 100%;
+}
+
+.home .container .banner .text .titre {
+    font-size: 4.8vw; 
+    font-weight: 400;
+    color: #1F2123;
+    margin-top: 0;
+    margin-left: 15px;
+}
+
+.home .container .banner .text .text {
+    font-size: 4vw;
+    font-weight: 400;
+    color: #85898D;
+    margin-left: 15px;
+}
+
+.home .container .banner .button {
+    margin-bottom: 15px ;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-weight: bold;
+    height: 48px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #000;
+    border-radius: 12px;
+    padding: 12px 30px;
+    font-size: 14px;
+    transition: background-color .3s, color .35s;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.home .container .banner .button:hover {
+    background-color: rgba(0, 0, 0, .05);
+    color: #706f6f;
+    transition: 0.4s;
+}
+
+
+.home .container .banner-image-2-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .container .banner .banner-image-2-mobile svg {
+    height: 50vw;
+    width: 50vw;
+}
+
+.banner .banner-image-2-mobile .img-fluid-2 {
+    height: 50vw;
+    width: 50vw;
+}
+
+.container .row .col-lg-6 .compteur{
+    text-align: center ;
+    margin-top: 100px;
+    width: 75vw;
+    
+}
+
+.container .row .col-lg-6 .compteur span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    background-image: linear-gradient(to right, var(--gradient-primary), var(--gradient-secondary) 80%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container .row .col-lg-6 .compteur {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+
+
+
+
+
+.computer {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 30px;
+    }
+    .navbar-toggler-icon { 
+        width: 2em;
+        height: 2em;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .home .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home .container .banner {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 8px 1px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin-top: 120px;
+        width: 75vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .home .container .banner .banner-image {
+        width: 100%;
+        height: auto + 5px;
+    }
+    
+    .home .container .banner .img-fluid {
+        border-radius: 10px;
+        width: 100%;
+        height: auto + 5px;
+    }
+    
+    .home .container .banner .text {
+        max-width: 100%;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    
+    .home .container .banner .text .titre {
+        font-size: 1.5vw; 
+        font-weight: 400;
+        color: #1F2123;
+        margin-top: 0;
+        margin-left: 15px;
+    }
+    
+    .home .container .banner .text .text {
+        font-size: 1.1vw;
+        font-weight: 400;
+        color: #85898D;
+        margin-left: 15px;
+    }
+    
+    .home .container .banner .button {
+        margin-left: 15px; 
+        font-weight: bold;
+        height: 48px;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #000;
+        border-radius: 12px;
+        padding: 12px 30px;
+        font-size: 14px;
+        transition: background-color .3s, color .35s;
+        position: relative;
+        overflow: hidden;
+        border: none;
+    }
+    
+    .home .container .banner .button:hover {
+        background-color: rgba(0, 0, 0, .05);
+        color: #706f6f;
+        transition: 0.4s;
+    }
+
+.container .row .col-lg-6 .compteur span {
+    font-size: 2.5vw;
+    letter-spacing: -3.6px;
+    font-size: 92px;
+    font-weight: 600;
+    line-height: 1.1;
+    background-image: linear-gradient(to right, var(--gradient-primary), var(--gradient-secondary) 80%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container .row .col-lg-6 .compteur {
+    font-size: 2.5vw;
+    letter-spacing: -3.6px;
+    font-size: 92px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+
+
+
+
+    .computer {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .content {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navbar {
+        margin-top: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-radius: 15px;
+    }
+    
+    .navbar-brand {
+        font-weight: bold;
+        margin-right: 200px;
+        /* Ajoutez une police plus épaisse pour le texte du logo */
+    }
+
+    .navbar-brand-two {
+        font-weight: bold;
+        margin-left: 200px;
+        height: 48px;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #000;
+        border-radius: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 30px;
+        font-size: 14px;
+        transition: background-color .3s, color .35s;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .navbar-brand-two:hover {
+        background-color: rgba(0, 0, 0, .05);
+        color: #706f6f;
+        transition: 0.4s;
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0 5px;
+        /* Ajoutez une marge entre les éléments de la navbar */
+    }
+
+    /*banner-2*/
+
+    .home .container .banner .banner-image-2 svg {
+        height: 20vw;
+        width: 20vw;
+    }
+    
+    .banner .banner-image-2 .img-fluid-2 {
+        height: 20vw;
+        width: 20vw;
+    }
+}
+
+
+.gradient-center-holder {
+    z-index: -1;
+    width: 100%;
+    height: 100vw;
+    position: absolute;
+    top: 0%;
+    bottom: -40%;
+    left: 0%;
+    right: 0%;
+    overflow: hidden;
+}
+
+.gradient-center {
+    z-index: -1;
+    width: 100%;
+    height: 100vw;
+    background-image: linear-gradient(130deg, var(--gradient-primary), var(--gradient-secondary) 30%, var(--gradient-third) 63%, var(--gradient-4) 81%);
+    opacity: .2;
+    filter: blur(150px);
+    position: absolute;
+    top: 0%;
+    bottom: 40%;
+    left: 0%;
+    right: 0%;
+}
